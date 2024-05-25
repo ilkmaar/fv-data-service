@@ -1,0 +1,512 @@
+{
+  "Color:Value": {
+    "endpoint": "Color:Value",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "color_id",
+    "fields": {
+      "color_id": true,
+      "color_name": false
+    }
+  },
+  "CreatureType:Value": {
+    "endpoint": "CreatureType:Value",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "creature_type_id",
+    "fields": {
+      "creature_type_id": true,
+      "creature_type_name": false
+    }
+  },
+  "ResourceCategory:Value": {
+    "endpoint": "ResourceCategory:Value",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "resource_category_id",
+    "fields": {
+      "resource_category_id": true,
+      "resource_category_name": false
+    }
+  },
+  "ResourceVariety:Value": {
+    "endpoint": "ResourceVariety:Value",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "resource_type_id",
+    "fields": {
+      "resource_type_id": true,
+      "resource_type_name": false
+    }
+  },
+  "ItemCategory:Value": {
+    "endpoint": "ItemCategory:Value",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "item_category_id",
+    "fields": {
+      "item_category_id": true,
+      "item_category_name": false
+    }
+  },
+  "ItemVariety:Value": {
+    "endpoint": "ItemVariety:Value",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "item_variety_id",
+    "fields": {
+      "item_variety_id": true,
+      "item_variety_name": false,
+      "item_category_id": false
+    }
+  },
+  "ItemType:Value": {
+    "endpoint": "ItemType:Value",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "item_def_id",
+    "fields": {
+      "item_def_id": true,
+      "item_category_id": false,
+      "resource_category_id": false,
+      "resource_type_id": false,
+      "item_attribute_1_id": false,
+      "item_attribute_2_id": false,
+      "item_def_name": false
+    }
+  },
+  "ResourceType:Value": {
+    "endpoint": "ResourceType:Value",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "item_def_id",
+    "fields": {
+      "item_def_id": true,
+      "item_category_id": false,
+      "resource_category_id": false,
+      "resource_type_id": false,
+      "item_attribute_1_id": false,
+      "item_attribute_2_id": false,
+      "item_def_name": false
+    }
+  },
+  "ActivityType:Value": {
+    "endpoint": "ActivityType:Value",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "activity_id",
+    "fields": {
+      "activity_id": true,
+      "activity_name": false
+    }
+  },
+  "World:Entity": {
+    "endpoint": "World:Entity",
+    "hasRawTime": false,
+    "hasCreatedDate": true,
+    "hasWorldId": true,
+    "idField": "world_id",
+    "fields": {
+      "world_id": false,
+      "created_date": false,
+      "players": false,
+      "creatures": false
+    }
+  },
+  "Player:Entity": {
+    "endpoint": "Player:Entity",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "player_id",
+    "fields": {
+      "player_id": true,
+      "player_name": false,
+      "world_id": false
+    }
+  },
+  "Faction:Entity": {
+    "endpoint": "Faction:Entity",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "faction_id",
+    "fields": {
+      "faction_id": true,
+      "faction_name": false
+    }
+  },
+  "Creature:Entity": {
+    "endpoint": "Creature:Entity",
+    "hasRawTime": false,
+    "hasCreatedDate": true,
+    "hasWorldId": true,
+    "idField": "creature_id",
+    "fields": {
+      "creature_id": false,
+      "creature_name": false,
+      "faction_id": false,
+      "color_id": false,
+      "creature_type_id": false,
+      "created_date": false,
+      "world_id": false
+    }
+  },
+  "Island:Entity": {
+    "endpoint": "Island:Entity",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "island_id",
+    "fields": {
+      "island_id": true,
+      "island_name": false
+    }
+  },
+  "Area:Entity": {
+    "endpoint": "Area:Entity",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "location_id",
+    "fields": {
+      "location_id": true,
+      "location_name": false,
+      "location_creature_activity_type": false,
+      "location_island": false,
+      "location_position_x": false,
+      "location_position_y": false
+    }
+  },
+  "Plot:Entity": {
+    "endpoint": "Plot:Entity",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "plot_id",
+    "fields": {
+      "plot_id": false,
+      "location_id": true
+    }
+  },
+  "Patch:Entity": {
+    "endpoint": "Patch:Entity",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "patch_id",
+    "fields": {
+      "patch_id": false,
+      "plot_id": false
+    }
+  },
+  "Item:Entity": {
+    "endpoint": "Item:Entity",
+    "hasRawTime": false,
+    "hasCreatedDate": true,
+    "hasWorldId": true,
+    "idField": "item_id",
+    "fields": {
+      "item_id": false,
+      "item_def_id": false,
+      "item_value": false,
+      "item_quality": false,
+      "created_date": false,
+      "world_id": false
+    }
+  },
+  "Resource:Entity": {
+    "endpoint": "Resource:Entity",
+    "hasRawTime": false,
+    "hasCreatedDate": true,
+    "hasWorldId": true,
+    "idField": "item_id",
+    "fields": {
+      "item_id": false,
+      "item_def_id": false,
+      "item_value": false,
+      "item_quality": false,
+      "created_date": false,
+      "world_id": false
+    }
+  },
+  "Inventory:Entity": {
+    "endpoint": "Inventory:Entity",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": false,
+    "idField": "inventory_id",
+    "fields": {
+      "inventory_id": false,
+      "inventory_name": false
+    }
+  },
+  "DataTable:Entity": {
+    "endpoint": "DataTable:Entity",
+    "hasRawTime": true,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "table_id",
+    "fields": {
+      "player_manipulate_data_event_id": false,
+      "data_event_type_id": false,
+      "world_id": false,
+      "player_id": false,
+      "table_name": false,
+      "game_time_id": false,
+      "raw_time": false
+    }
+  },
+  "Location:State": {
+    "endpoint": "Location:State",
+    "hasRawTime": true,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "player_move_event_id",
+    "fields": {
+      "player_move_event_id": false,
+      "world_id": false,
+      "player_id": false,
+      "move_event_type_id": false,
+      "location_id": false,
+      "player_move_event_pos_x": false,
+      "player_move_event_pos_y": false,
+      "game_time_id": false,
+      "raw_time": false
+    }
+  },
+  "Weather:State": {
+    "endpoint": "Weather:State",
+    "hasRawTime": true,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "weather_event_id",
+    "fields": {
+      "weather_event_id": false,
+      "world_id": false,
+      "weather_event_island": false,
+      "sun_type": false,
+      "rain_type": false,
+      "day_id": false,
+      "raw_time": false
+    }
+  },
+  "CreatureLocation:State": {
+    "endpoint": "CreatureLocation:State",
+    "hasRawTime": true,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "creature_move_event_id",
+    "fields": {
+      "creature_move_event_id": false,
+      "world_id": false,
+      "creature_id": false,
+      "game_time_id": false,
+      "raw_time": false,
+      "location_id": false,
+      "creature_move_event_pos_x": false,
+      "creature_move_event_pos_y": false,
+      "creature_move_event_health": false,
+      "creature_move_event_mood": false,
+      "creature_move_event_social": false
+    }
+  },
+  "CreatureActivity:State": {
+    "endpoint": "CreatureActivity:State",
+    "hasRawTime": true,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "creature_activity_event_id",
+    "fields": {
+      "creature_activity_event_id": false,
+      "activity_event_type": false,
+      "world_id": false,
+      "creature_id": false,
+      "game_time_id": false,
+      "raw_time": false,
+      "location_id": false,
+      "creature_activity_event_health_delta": false,
+      "creature_activity_event_mood_delta": false,
+      "creature_activity_event_social_delta": false
+    }
+  },
+  "Foraging:Action": {
+    "endpoint": "Foraging:Action",
+    "hasRawTime": true,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "interaction_event_id",
+    "fields": {
+      "interaction_event_id": false,
+      "interaction_event_type": false,
+      "game_time_id": false,
+      "raw_time": false,
+      "world_id": false,
+      "player_id": false,
+      "creature_id": false,
+      "input_items": false,
+      "output_items": false,
+      "interaction_event_mood_effect": false,
+      "interaction_event_health_effect": false,
+      "interaction_event_social_effect": false,
+      "interaction_event_level_1": false,
+      "interaction_event_level_2": false,
+      "interaction_event_level_3": false,
+      "location_id": false,
+      "patch_id": false,
+      "interaction_event_event_pos_x": false,
+      "interaction_event_event_pos_y": false
+    }
+  },
+  "Crafting:Action": {
+    "endpoint": "Crafting:Action",
+    "hasRawTime": true,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "interaction_event_id",
+    "fields": {
+      "interaction_event_id": false,
+      "interaction_event_type": false,
+      "game_time_id": false,
+      "raw_time": false,
+      "world_id": false,
+      "player_id": false,
+      "creature_id": false,
+      "input_items": false,
+      "output_items": false,
+      "interaction_event_mood_effect": false,
+      "interaction_event_health_effect": false,
+      "interaction_event_social_effect": false,
+      "interaction_event_level_1": false,
+      "interaction_event_level_2": false,
+      "interaction_event_level_3": false,
+      "location_id": false,
+      "patch_id": false,
+      "interaction_event_event_pos_x": false,
+      "interaction_event_event_pos_y": false
+    }
+  },
+  "Gifting:Action": {
+    "endpoint": "Gifting:Action",
+    "hasRawTime": true,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "interaction_event_id",
+    "fields": {
+      "interaction_event_id": false,
+      "interaction_event_type": false,
+      "game_time_id": false,
+      "raw_time": false,
+      "world_id": false,
+      "player_id": false,
+      "creature_id": false,
+      "input_items": false,
+      "output_items": false,
+      "interaction_event_mood_effect": false,
+      "interaction_event_health_effect": false,
+      "interaction_event_social_effect": false,
+      "interaction_event_level_1": false,
+      "interaction_event_level_2": false,
+      "interaction_event_level_3": false,
+      "location_id": false,
+      "patch_id": false,
+      "interaction_event_event_pos_x": false,
+      "interaction_event_event_pos_y": false
+    }
+  },
+  "Inventory:Action": {
+    "endpoint": "Inventory:Action",
+    "hasRawTime": true,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "player_item_interaction_event_id",
+    "fields": {
+      "player_item_interaction_event_id": false,
+      "world_id": false,
+      "player_id": false,
+      "player_item_interaction_type_id": false,
+      "item_id": false,
+      "hidden_item_def_id": false,
+      "inventory": false,
+      "location_id": false,
+      "player_item_interaction_event_pos_x": false,
+      "player_item_interaction_event_pos_y": false,
+      "game_time_id": false,
+      "raw_time": false
+    }
+  },
+  "DinerSeating:Action": {
+    "endpoint": "DinerSeating:Action",
+    "hasRawTime": true,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "diner_seating_event_id",
+    "fields": {
+      "diner_seating_event_id": false,
+      "world_id": false,
+      "player_id": false,
+      "creature_id": false,
+      "seat_id": false,
+      "seat_type_id": false,
+      "game_time_id": false,
+      "raw_time": false
+    }
+  },
+  "DinerReview:Action": {
+    "endpoint": "DinerReview:Action",
+    "hasRawTime": true,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "diner_rating_event_id",
+    "fields": {
+      "diner_rating_event_id": false,
+      "world_id": false,
+      "player_id": false,
+      "creature_id": false,
+      "rating": false,
+      "item_id": false,
+      "hidden_item_def_id": false,
+      "game_time_id": false,
+      "raw_time": false
+    }
+  },
+  "Data:Action": {
+    "endpoint": "Data:Action",
+    "hasRawTime": true,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "player_manipulate_data_event_id",
+    "fields": {
+      "player_manipulate_data_event_id": false,
+      "data_event_type_id": false,
+      "world_id": false,
+      "player_id": false,
+      "table_name": false,
+      "game_time_id": false,
+      "raw_time": false
+    }
+  },
+  "Friendship:Relationship": {
+    "endpoint": "Friendship:Relationship",
+    "hasRawTime": false,
+    "hasCreatedDate": false,
+    "hasWorldId": true,
+    "idField": "personal_rep_id",
+    "fields": {
+      "personal_rep_id": true,
+      "world_id": false,
+      "player_id": false,
+      "creature_id": false,
+      "personal_rep_value": false
+    }
+  }
+}

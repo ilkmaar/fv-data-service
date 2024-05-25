@@ -1,0 +1,332 @@
+{
+  "Color:Value": {
+    "color_id": 5
+  },
+  "CreatureType:Value": {
+    "creature_type_id": 19
+  },
+  "ResourceCategory:Value": {
+    "resource_category_id": 3
+  },
+  "ResourceVariety:Value": {
+    "resource_type_id": 4
+  },
+  "ItemCategory:Value": {
+    "item_category_id": 16
+  },
+  "ItemVariety:Value": {
+    "item_variety_id": 16
+  },
+  "ItemType:Value": {
+    "item_def_id": 79
+  },
+  "ResourceType:Value": {
+    "item_def_id": 79
+  },
+  "ActivityType:Value": {
+    "activity_id": 4
+  },
+  "World:Entity": {
+    "created_date": "2024-05-25T12:18:13.678102Z"
+  },
+  "Player:Entity": {
+    "QA_DEFAULT_GROUP_NAME": {
+      "player_id": 3
+    },
+    "LINUX_238": {
+      "player_id": 506573
+    },
+    "PRE-RELEASE_247": {
+      "player_id": 506892
+    }
+  },
+  "Faction:Entity": {
+    "faction_id": 4
+  },
+  "Creature:Entity": {
+    "created_date": "2024-05-25T12:26:36.578537Z"
+  },
+  "Island:Entity": {
+    "island_id": 4
+  },
+  "Area:Entity": {
+    "location_id": 121
+  },
+  "Plot:Entity": [
+    "plot_GerminationStation",
+    "plot_FloweringFells",
+    "plot_CircleofChange",
+    "plot_FlourishingFairway",
+    "plot_AmplifyAcres",
+    "plot_EvolutionEstates",
+    "plot_ThrivingTerrace",
+    "plot_SproutStreet",
+    "plot_BlossomingBeach",
+    "plot_ShadyPines",
+    "plot_FoggyForest",
+    "plot_FungiFarms",
+    "plot_EclipseEstates",
+    "plot_GreyGardens",
+    "plot_MushroomManor",
+    "plot_SunsetBoulevard",
+    "plot_DimmingDelta",
+    "plot_MurkyMoguls",
+    "plot_TheStables",
+    "plot_TranquilTerrace",
+    "plot_PermaPlot",
+    "plot_SurefootWay",
+    "plot_EnduringWay",
+    "plot_CrystalCove",
+    "plot_FixedField",
+    "plot_BoulderBoulevard",
+    "plot_AmethystAcre",
+    "plot_GlowingGables",
+    "plot_LuminousLane",
+    "plot_ShimmerStreet",
+    "plot_AuroraAcres",
+    "plot_BlazingBypass",
+    "plot_GlitterGateway",
+    "plot_IllumininatingInlet",
+    "plot_FlickeringFalls",
+    "plot_CandlelightCircle"
+  ],
+  "Patch:Entity": [
+    "patch_0_Amethyst Acre",
+    "patch_1_Amethyst Acre",
+    "patch_2_Amethyst Acre",
+    "patch_3_Amethyst Acre",
+    "patch_4_Amethyst Acre",
+    "patch_0_Amplify Acres",
+    "patch_1_Amplify Acres",
+    "patch_2_Amplify Acres",
+    "patch_3_Amplify Acres",
+    "patch_4_Amplify Acres",
+    "patch_0_Aurora Acres",
+    "patch_1_Aurora Acres",
+    "patch_2_Aurora Acres",
+    "patch_3_Aurora Acres",
+    "patch_4_Aurora Acres",
+    "patch_0_Blazing Bypass",
+    "patch_1_Blazing Bypass",
+    "patch_2_Blazing Bypass",
+    "patch_3_Blazing Bypass",
+    "patch_4_Blazing Bypass",
+    "patch_0_Blossoming Beach",
+    "patch_1_Blossoming Beach",
+    "patch_2_Blossoming Beach",
+    "patch_3_Blossoming Beach",
+    "patch_4_Blossoming Beach",
+    "patch_0_Boulder Boulevard",
+    "patch_1_Boulder Boulevard",
+    "patch_2_Boulder Boulevard",
+    "patch_3_Boulder Boulevard",
+    "patch_4_Boulder Boulevard",
+    "patch_0_Candlelight Circle",
+    "patch_1_Candlelight Circle",
+    "patch_2_Candlelight Circle",
+    "patch_3_Candlelight Circle",
+    "patch_4_Candlelight Circle",
+    "patch_0_Circle of Change",
+    "patch_1_Circle of Change",
+    "patch_2_Circle of Change",
+    "patch_3_Circle of Change",
+    "patch_4_Circle of Change",
+    "patch_0_Crystal Cove",
+    "patch_1_Crystal Cove",
+    "patch_2_Crystal Cove",
+    "patch_3_Crystal Cove",
+    "patch_4_Crystal Cove",
+    "patch_0_Dimming Delta",
+    "patch_1_Dimming Delta",
+    "patch_2_Dimming Delta",
+    "patch_3_Dimming Delta",
+    "patch_4_Dimming Delta",
+    "patch_0_Eclipse Estates",
+    "patch_1_Eclipse Estates",
+    "patch_2_Eclipse Estates",
+    "patch_3_Eclipse Estates",
+    "patch_4_Eclipse Estates",
+    "patch_0_Enduring Way",
+    "patch_1_Enduring Way",
+    "patch_2_Enduring Way",
+    "patch_3_Enduring Way",
+    "patch_4_Enduring Way",
+    "patch_0_Evolution Estates",
+    "patch_1_Evolution Estates",
+    "patch_2_Evolution Estates",
+    "patch_3_Evolution Estates",
+    "patch_4_Evolution Estates",
+    "patch_0_Fixed Field",
+    "patch_1_Fixed Field",
+    "patch_2_Fixed Field",
+    "patch_3_Fixed Field",
+    "patch_4_Fixed Field",
+    "patch_0_Flickering Falls",
+    "patch_1_Flickering Falls",
+    "patch_2_Flickering Falls",
+    "patch_3_Flickering Falls",
+    "patch_4_Flickering Falls",
+    "patch_0_Flourishing Fairway",
+    "patch_1_Flourishing Fairway",
+    "patch_2_Flourishing Fairway",
+    "patch_3_Flourishing Fairway",
+    "patch_4_Flourishing Fairway",
+    "patch_0_Flowering Fells",
+    "patch_1_Flowering Fells",
+    "patch_2_Flowering Fells",
+    "patch_3_Flowering Fells",
+    "patch_4_Flowering Fells",
+    "patch_0_Foggy Forest",
+    "patch_1_Foggy Forest",
+    "patch_2_Foggy Forest",
+    "patch_3_Foggy Forest",
+    "patch_4_Foggy Forest",
+    "patch_0_Fungi Farms",
+    "patch_1_Fungi Farms",
+    "patch_2_Fungi Farms",
+    "patch_3_Fungi Farms",
+    "patch_4_Fungi Farms",
+    "patch_0_Germination Station",
+    "patch_1_Germination Station",
+    "patch_2_Germination Station",
+    "patch_3_Germination Station",
+    "patch_4_Germination Station",
+    "patch_0_Glitter Gateway",
+    "patch_1_Glitter Gateway",
+    "patch_2_Glitter Gateway",
+    "patch_3_Glitter Gateway",
+    "patch_4_Glitter Gateway",
+    "patch_0_Glowing Gables",
+    "patch_1_Glowing Gables",
+    "patch_2_Glowing Gables",
+    "patch_3_Glowing Gables",
+    "patch_4_Glowing Gables",
+    "patch_0_Grey Gardens",
+    "patch_1_Grey Gardens",
+    "patch_2_Grey Gardens",
+    "patch_3_Grey Gardens",
+    "patch_4_Grey Gardens",
+    "patch_0_Illumininating Inlet",
+    "patch_1_Illumininating Inlet",
+    "patch_2_Illumininating Inlet",
+    "patch_3_Illumininating Inlet",
+    "patch_4_Illumininating Inlet",
+    "patch_0_Luminous Lane",
+    "patch_1_Luminous Lane",
+    "patch_2_Luminous Lane",
+    "patch_3_Luminous Lane",
+    "patch_4_Luminous Lane",
+    "patch_0_Murky Moguls",
+    "patch_1_Murky Moguls",
+    "patch_2_Murky Moguls",
+    "patch_3_Murky Moguls",
+    "patch_4_Murky Moguls",
+    "patch_0_Mushroom Manor",
+    "patch_1_Mushroom Manor",
+    "patch_2_Mushroom Manor",
+    "patch_3_Mushroom Manor",
+    "patch_4_Mushroom Manor",
+    "patch_0_Perma Plot",
+    "patch_1_Perma Plot",
+    "patch_2_Perma Plot",
+    "patch_3_Perma Plot",
+    "patch_4_Perma Plot",
+    "patch_0_Shady Pines",
+    "patch_1_Shady Pines",
+    "patch_2_Shady Pines",
+    "patch_3_Shady Pines",
+    "patch_4_Shady Pines",
+    "patch_0_Shimmer Street",
+    "patch_1_Shimmer Street",
+    "patch_2_Shimmer Street",
+    "patch_3_Shimmer Street",
+    "patch_4_Shimmer Street",
+    "patch_0_Sprout Street",
+    "patch_1_Sprout Street",
+    "patch_2_Sprout Street",
+    "patch_3_Sprout Street",
+    "patch_4_Sprout Street",
+    "patch_0_Sunset Boulevard",
+    "patch_1_Sunset Boulevard",
+    "patch_2_Sunset Boulevard",
+    "patch_3_Sunset Boulevard",
+    "patch_4_Sunset Boulevard",
+    "patch_0_Surefoot Way",
+    "patch_1_Surefoot Way",
+    "patch_2_Surefoot Way",
+    "patch_3_Surefoot Way",
+    "patch_4_Surefoot Way",
+    "patch_0_The Stables",
+    "patch_1_The Stables",
+    "patch_2_The Stables",
+    "patch_3_The Stables",
+    "patch_4_The Stables",
+    "patch_0_Thriving Terrace",
+    "patch_1_Thriving Terrace",
+    "patch_2_Thriving Terrace",
+    "patch_3_Thriving Terrace",
+    "patch_4_Thriving Terrace",
+    "patch_0_Tranquil Terrace",
+    "patch_1_Tranquil Terrace",
+    "patch_2_Tranquil Terrace",
+    "patch_3_Tranquil Terrace",
+    "patch_4_Tranquil Terrace"
+  ],
+  "Item:Entity": {
+    "created_date": "2024-05-25T12:28:09.365214Z"
+  },
+  "Resource:Entity": {
+    "created_date": "2024-05-25T12:28:09.365214Z"
+  },
+  "Inventory:Entity": [
+    "Icebox",
+    "Ready To Serve"
+  ],
+  "DataTable:Entity": {
+    "raw_time": "2024-05-25T12:28:14.136598Z"
+  },
+  "Location:State": {
+    "raw_time": "2024-05-25T13:32:16.328389Z"
+  },
+  "Weather:State": {
+    "raw_time": "2024-05-25T13:36:02.896364Z"
+  },
+  "CreatureLocation:State": {
+    "raw_time": "2024-05-25T13:36:02.812386Z"
+  },
+  "CreatureActivity:State": {
+    "raw_time": "2024-05-25T13:36:02.730386Z"
+  },
+  "Foraging:Action": {
+    "raw_time": "2024-05-25T12:28:09.434815Z"
+  },
+  "Crafting:Action": {
+    "raw_time": "2024-05-25T12:28:09.434815Z"
+  },
+  "Gifting:Action": {
+    "raw_time": "2024-05-25T12:28:09.434815Z"
+  },
+  "Inventory:Action": {
+    "raw_time": "2024-05-24T15:56:29.494435Z"
+  },
+  "DinerSeating:Action": {
+    "raw_time": "2024-05-24T16:33:12.901267Z"
+  },
+  "DinerReview:Action": {
+    "raw_time": "2024-05-24T15:56:29.484712Z"
+  },
+  "Data:Action": {
+    "raw_time": "2024-05-25T12:28:14.136598Z"
+  },
+  "Friendship:Relationship": {
+    "QA_DEFAULT_GROUP_NAME": {
+      "personal_rep_id": 600
+    },
+    "PRE-RELEASE_247": {
+      "personal_rep_id": 708
+    },
+    "LINUX_238": {
+      "personal_rep_id": 400
+    }
+  }
+}
