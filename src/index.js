@@ -8,6 +8,8 @@ import dataModel from './data/dataModel.js';
 const log = logger.initializeLogger();
 
 async function loadNewData() {
+    log.info('START data loading.', new Date().toISOString());
+
     // Build dependencies map
     const dataTypes = Object.keys(dataModel.nodes);
     const dependenciesMap = new Map();
@@ -43,20 +45,26 @@ async function loadNewData() {
             try {
                 const { success, added } = await loader.loadNewData(dataType);
                 if (!success) {
-                    log.error(chalk.red(`Failed to load data for: ${dataType}`));
+                    console.log(chalk.red(`Failed to load data for: ${dataType}`));
                     continue;
                 }
                 typesLoaded.add(dataType);
                 console.log(chalk.green(`END Loaded: ${dataType} (${added} new items)`));
+                if (added > 0) {
+                    log.info(`Loaded  ${added} new ${dataType}.`, {type: dataType, count: added});
+                }
                 loadableFound = true;
             } catch (error) {
-                log.error(chalk.red(`Error loading data for ${dataType}: ${error.message}`));
+                console.log(chalk.red(`Error loading data for ${dataType}: ${error.message}`));
+                log.error(`Error loading data for ${dataType}: ${error.message}`);
             }
         }
     } while (loadableFound);
 
     if (typesToLoad.some(type => !typesLoaded.has(type))) {
-        console.log(chalk.red('Could not resolve all dependencies or load all types.'));
+        const missingTypes = typesToLoad.filter(type => !typesLoaded.has(type));
+        console.log(chalk.red('Could not resolve all dependencies or load all types: ', missingTypes));
+        log.error('Could not resolve all dependencies or load all types.', { missing: missingTypes });
     } else {
         console.log(chalk.green('All data loaded.'));
     }
@@ -64,13 +72,15 @@ async function loadNewData() {
 
 async function update() {
     await loadNewData();
+    log.info('END data loading.', new Date().toISOString());
 }
 
 // Schedule the data fetching, processing, and updating
-cron.schedule('*/10 * * * *', async () => {
+cron.schedule('*/5 * * * *', async () => {
     console.log(chalk.blue('Scheduled data fetch process started.'));
     await update();
     console.log(chalk.blue('Scheduled data fetch process completed.'));
 });
 
+log.info('Set up cron job to run every 5 minutes.');
 update();

@@ -112,6 +112,10 @@ function selectFilterFunction(metadata) {
 
 async function filter(dataTypeKey, data, lastLoadedData) {
     const metadata = await apiTester.getMetadata();
+    if(!metadata[dataTypeKey]) {
+        throw new Error(`No metadata found for ${dataTypeKey}`);
+    }
+
     const idField = metadata[dataTypeKey].idField;
     const filterFunction = selectFilterFunction(metadata[dataTypeKey]);
     const { newLastLoaded, filteredData } = filterFunction(data, lastLoadedData, idField);

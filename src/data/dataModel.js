@@ -247,6 +247,14 @@ export const events = {
             { field_name: 'interaction_event_event_pos_y', property_name: 'y' },
         ],
     },
+    'CreatureDirection:Action': {
+        labels: ['CreatureDirection', 'Action'],
+        properties: [
+            { field_name: 'direct_creature_event_id', property_name: 'externalId' },
+            { field_name: 'world_id', property_name: 'world' },
+            { field_name: 'raw_time', property_name: 'time' },
+        ],
+    },
     'DinerSeating:Action': {
         labels: ['DinerSeating', 'Action'],
         properties: [
@@ -366,6 +374,11 @@ const relationships = {
         { direction: 'from', typeKey: 'Player:Entity', relation: 'DOES_ACTION', match_on: 'player_id' },
         { direction: 'to', typeKey: 'Creature:Entity', relation: 'TARGETS', match_on: 'creature_id' },
         { direction: 'from', typeKey: 'Item:Entity', relation: 'USED_IN', match_on: 'input_item1' },
+    ],
+    'CreatureDirection:Action': [
+        { direction: 'to', typeKey: 'Player:Entity', relation: 'DOES_ACTION', match_on: 'player_id' },
+        { direction: 'from', typeKey: 'Creature:Entity', relation: 'DOES_ACTION', match_on: 'creature_id' },
+        { direction: 'to', typeKey: 'Area:Entity', relation: 'TARGETS', match_on: 'location_id' },
     ],
     'Inventory:Action': [
         { direction: 'from', typeKey: 'Player:Entity', relation: 'DOES_ACTION', match_on: 'player_id' },

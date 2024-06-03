@@ -168,6 +168,7 @@ export default {
         'Foraging:Action': '/interaction-events',
         'Crafting:Action': '/interaction-events',
         'Gifting:Action': '/interaction-events',
+        'CreatureDirection:Action': '/direct-creature-events',
         'DinerSeating:Action': '/diner-seating-events',
         'DinerReview:Action': '/diner-rating-events',
         'Inventory:Action': '/player-item-interaction-events',
